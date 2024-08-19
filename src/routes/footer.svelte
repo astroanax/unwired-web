@@ -57,7 +57,7 @@
 	#nitc-logo {
 			height: auto;
 			width: auto;
-			max-width: 10em;
+			max-width: 100%;
 			max-height: 10em;
 	}
 	.img-container{
@@ -74,6 +74,9 @@
 			display: flex;
 			justify-content: space-evenly;
 			align-items: center;
+			overflow: auto;
+			flex-wrap: wrap;
+			gap: 1em;
 	}
 	.social-icon{
 			height: auto;
