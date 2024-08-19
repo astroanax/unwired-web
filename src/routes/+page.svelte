@@ -14,10 +14,11 @@
 		<img src="/img/burger.svg" alt="Menu" id="menu" class="mr-3 w-10 filter-white">
 	</header>
 
-	<main class="h-56 w-full sm:h-64 xl:h-80 2xl:h-96">
+	<main>
+		hi
 	</main>
 
-	<footer class="bg-primary-500">
+	<footer class="bg-primary-500 w-full">
 		<span class="font-bold">For Enquiries Contact<br/></span>
 		<div class="enquiries">
 			Dr. V Sajith, Associate Professor(MED) & Faculty Advisor<br/>
@@ -46,27 +47,31 @@
 		.container{
 				font-family: "Roboto Flex", sans-serif;
 		}
-	footer{
-			margin-bottom: 0;
-			color: white;
-	}
-	footer > div {
-			margin-left: 1.5em;
-	}
-	.font-bold{
-			margin-left: 1em;
-	}
-  .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  }
-	header {
-		display: flex;
-  }
-	#menu{
-			margin-left: auto;
-	}
+		.font-bold{
+				margin-left: 1em;
+		}
+  	.container {
+      	display: flex;
+      	flex-direction: column;
+  	}
+		header {
+				display: flex;
+				margin-bottom: auto;
+  	}
+		#menu{
+        margin-left: auto;
+    }
+		main{
+				flex-grow: 1;
+		}
+    footer{
+        color: white;
+        margin-top: auto;
+				align-self: flex-end;
+    }
+    footer > div {
+        margin-left: 1.5em;
+    }
 	.enquiries, .info, .address {
 			max-width: 80%;
 	}
