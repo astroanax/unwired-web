@@ -14,6 +14,12 @@
 
 <Header />
 <main>
-Team Unwired's Projects
+<h2> Team Unwired's Project over the years</h2>
 </main>
 <Footer />
+
+<style>
+	h2{
+			text-align: center;
+	}
+</style>
