@@ -1,40 +1,48 @@
 <script>
 	import Header from './lib/header.svelte';
 	import Footer from './lib/footer.svelte';
-	import {Carousel} from 'flowbite-svelte';
+	import { Slidy } from "@slidy/svelte";
+	import { flip } from "@slidy/animation";
 
-	export const images = [
+	let index = 4, position = 0, limit = 6;
+	const slides = [
 		{
-			alt: '1.jpg',
-			src: '/img/1.jpg',
-			title: '1.jpg'
+			width: 400,
+			height: 400,
+			id: 1,
+			src: "/img/1.jpg",
 		},
 		{
-			alt: '2.jpg',
-			src: '/img/2.jpg',
-			title: '2.jpg'
+			width: 400,
+			height: 400,
+			id: 2,
+			src: "/img/2.jpg",
 		},
 		{
-			alt: '3.jpg',
-			src: '/img/3.jpg',
-			title: '3.jpg'
+			width: 400,
+			height: 400,
+			id: 3,
+			src: "/img/3.jpg",
 		},
 		{
-			alt: '4.jpg',
-			src: '/img/4.jpg',
-			title: '4.jpg'
+			width: 400,
+			height: 400,
+			id: 4,
+			src: "/img/4.jpg",
 		},
 		{
-			alt: '5.jpg',
-			src: '/img/5.jpg',
-			title: '5.jpg'
+			width: 400,
+			height: 400,
+			id: 5,
+			src: "/img/5.jpg",
 		},
 		{
-			alt: '6.jpg',
-			src: '/img/6.jpg',
-			title: '6.jpg'
+			width: 400,
+			height: 400,
+			id: 6,
+			src: "/img/6.jpg",
 		},
-			]
+	];
 </script>
 
 <svelte:head>
@@ -49,16 +57,18 @@
 <Header />
 <main>
 <h2> Team Unwired's Project over the years</h2>
-	<div class="h-60 w-full sm:h-64 xl:h-80 2xl:h-96 content-center">
-		<Carousel {images} let:Controls let:Indicators>
-			<Controls />
-			<Indicators />
-		</Carousel>
+	<div class="slidy-container">
+		<Slidy slides={slides} bind:index
+			   bind:position
+			   snap="center"
+			   animation={flip}
+			   thumbnail/>
 	</div>
 </main>
 <Footer />
 
 <style>
+	@import url('https://unpkg.com/@slidy/svelte/dist/slidy.css');
 	h2{
 			text-align: center;
 	}
@@ -66,5 +76,8 @@
 		margin-bottom: auto;
 		flex-grow: 1;
 		width: 100%;
+	}
+	.slidy-container{
+		height: 10%;
 	}
 </style>
