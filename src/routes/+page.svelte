@@ -69,6 +69,7 @@
 </script>
 
 <svelte:head>
+	<meta name="Team Unwired" content="NIT Calicut's Automotive club">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
@@ -121,10 +122,6 @@
 
 <style>
     @import url('https://unpkg.com/@slidy/svelte/dist/slidy.css');
-
-    h2 {
-        text-align: center;
-    }
 
     main {
         margin-bottom: auto;

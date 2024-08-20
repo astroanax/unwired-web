@@ -1,5 +1,4 @@
 <script>
-	import {Navbar, NavBrand, NavHamburger, NavLi, NavUl} from 'flowbite-svelte';
 </script>
 
 <header class="bg-surface-500">
