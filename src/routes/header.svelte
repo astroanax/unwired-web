@@ -3,12 +3,12 @@
 </script>
 
 <header>
-	<Navbar  class="bg-primary-500">
-		<NavBrand href="/">
+	<Navbar class="bg-surface-500">
+		<NavBrand  href="/">
 			<img src="/img/tuw-logo.png" class="" alt="Flowbite Logo" />
 		</NavBrand>
 		<NavHamburger  />
-		<NavUl class="bg-primary-500">
+		<NavUl>
 			<NavLi href="/">Home</NavLi>
 			<NavLi href="/about">About</NavLi>
 			<NavLi href="/contact">Contact</NavLi>

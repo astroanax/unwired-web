@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<footer class="bg-primary-500">
+<footer class="bg-surface-500">
 	<div class="text-container">
 	<span class="font-bold">For enquiries contact</span>
 	<div>
@@ -52,7 +52,7 @@
 	}
 	a:hover{
 			text-decoration: underline;
-			color: #a85a5a;
+  		color: rgba(var(--color-primary-400) / 1);
 	}
 	#nitc-logo {
 			height: auto;

@@ -11,7 +11,7 @@
 
 import flowbitePlugin from 'flowbite/plugin'
 
-import { tuwTheme } from './tuw-theme.js'
+import { tuwTheme } from './tuw-theme2.js'
 // @ts-check
 import { join } from 'path';
 
@@ -41,6 +41,9 @@ export default {
 			themes: {
 				custom: [
 					tuwTheme
+				],
+				preset: [
+					"crimson"
 				]
 			}
 		})
