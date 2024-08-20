@@ -13,6 +13,8 @@ import { tuwTheme } from './tuw-theme.js'
 // @ts-check
 import { join } from 'path';
 
+import flowbitePlugin from 'flowbite/plugin'
+
 // 1. Import the Skeleton plugin
 import { skeleton } from '@skeletonlabs/tw-plugin';
 
@@ -22,6 +24,7 @@ export default {
 	darkMode: 'class',
 	content: [
 		'./src/**/*.{html,js,svelte,ts}',
+		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}',
 		// 3. Append the path to the Skeleton package
 		join(require.resolve(
 			'@skeletonlabs/skeleton'),
@@ -33,6 +36,7 @@ export default {
 	},
 
 	plugins: [
+		flowbitePlugin,
 		skeleton({
 			themes: {
 				custom: [

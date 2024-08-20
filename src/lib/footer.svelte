@@ -37,8 +37,10 @@
 <style>
 	footer{
 			color: white;
-      font-family: 'Anek Devanagari', monospace;
+      	font-family: 'Anek Devanagari', monospace;
 			display: flex;
+		margin-top: auto;
+		width: 100%;
 	}
 	.font-bold{
 			margin-left: 1rem;

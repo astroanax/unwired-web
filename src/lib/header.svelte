@@ -8,6 +8,7 @@
 				display: flex;
         font-family: 'Anek Devanagari', monospace;
 				align-items: center;
+			width: 100%;
 		}
 	img{
 			margin-left: 1.5rem;
