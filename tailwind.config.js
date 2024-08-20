@@ -9,6 +9,8 @@
 //	plugins: [require('@tailwindcss/typography')]
 //};
 
+import flowbitePlugin from 'flowbite/plugin'
+
 import { tuwTheme } from './tuw-theme.js'
 // @ts-check
 import { join } from 'path';
@@ -22,6 +24,7 @@ export default {
 	darkMode: 'class',
 	content: [
 		'./src/**/*.{html,js,svelte,ts}',
+		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}',
 		// 3. Append the path to the Skeleton package
 		join(require.resolve(
 			'@skeletonlabs/skeleton'),
@@ -33,6 +36,7 @@ export default {
 	},
 
 	plugins: [
+		flowbitePlugin,
 		skeleton({
 			themes: {
 				custom: [
