@@ -1,8 +1,8 @@
 <script>
-	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
+	import {Navbar, NavBrand, NavHamburger, NavLi, NavUl} from 'flowbite-svelte';
 </script>
 
-<header class="bg-primary-500">
+<header>
 	<Navbar  class="bg-primary-500">
 		<NavBrand href="/">
 			<img src="/img/tuw-logo.png" class="" alt="Flowbite Logo" />
@@ -17,13 +17,13 @@
 </header>
 
 <style>
-		header{
-				display: flex;
-        font-family: 'Anek Devanagari', monospace;
-				align-items: center;
-			width: 100%;
-		}
+	header {
+		display: flex;
+		font-family: 'Anek Devanagari', monospace;
+		align-items: center;
+		width: 100%;
+	}
 	img{
-			margin-left: 1.5rem;
+		margin-left: 1.5rem;
 	}
 </style>

@@ -1,4 +1,4 @@
-export async function getPhotos(limit, size = { width: 1280, height: 800 }) {
+export async function getPhotos(size = {width: window.innerWidth, height: window.innerHeight}) {
     const photos = [
         ["/img/1c.jpg", 13.3, "1"],
         ["/img/2c.jpg", 15, "2"],
@@ -9,15 +9,13 @@ export async function getPhotos(limit, size = { width: 1280, height: 800 }) {
     ];
 
     return photos.reduce((acc, [src, aspectRatio, alt], i) => {
-            const source = { width: size.height * (aspectRatio / 20), height: size.height };
-            const max = { width: size.width, height: size.height };
-            const query = `?w=${ratio(aspect(source, max).width)}`;
-            console.log(src, query);
-            acc.push({
-                src: src,
-                alt: alt,
-                ...aspect(source, max)
-            });
+        const source = {width: size.height * (aspectRatio / 20), height: size.height};
+        const max = {width: size.width, height: size.height};
+        acc.push({
+            src: src,
+            alt: alt,
+            ...aspect(source, max)
+        });
         return acc;
     }, []);
 
