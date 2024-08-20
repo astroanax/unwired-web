@@ -3,19 +3,19 @@
 
 <footer class="bg-surface-700">
 	<div class="text-container">
-	<span class="font-bold">For enquiries contact</span>
+	<span class="font-bold text-tertiary-400">For enquiries contact</span>
 	<div>
 		Dr. V Sajith, Associate Professor(MED) & Faculty Advisor<br/>
 		Team Unwired, NIT Calicut<br/>
 		+91 9446361125, <a href="mailto:sajith@nitc.ac.in">sajith@nitc.ac.in</a> </div>
 	<br/>
-	<span class="font-bold">For more information</span>
+	<span class="font-bold text-tertiary-400">For more information</span>
 	<div>
 		Dr. Shijo Thomas, Associate Professor(MED) & Faculty Advisor<br/>
 		Team Unwired, NIT Calicut<br/>
 		+91 9446276409, <a href="mailto:shijo@nitc.ac.in">shijo@nitc.ac.in</a></div>
 	<br/>
-	<span class="font-bold">Contact address</span>
+	<span class="font-bold text-tertiary-400">Contact address</span>
 	<div>
 		Team Unwired<br/>
 		C/o Dr.V Sajith / Dr.Shijo Thomas<br/>

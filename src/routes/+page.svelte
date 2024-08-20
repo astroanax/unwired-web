@@ -102,7 +102,7 @@
 	{/await}
 	<div class="project-desc">
 		{#key index}
-			<h3 transition:slide><span class="project-name text-primary-300">{projectDescriptions[index][0]}</span></h3>
+			<h3 transition:slide><span class="project-name text-secondary-200">{projectDescriptions[index][0]}</span></h3>
 		{/key}
 		{#key index}
 		<span transition:blur class="acheivements">
@@ -110,7 +110,7 @@
 			<span class="rank">{projectDescriptions[index][2]}</span>
 		</span>
 		{/key}
-		<h4 class="text-secondnary-50 font-bold">Specifications</h4>
+		<h4 class="text-primary-300 font-bold">Specifications</h4>
 		<div class="specs">
 			{#each projectDescriptions[index][3].split('\r\n') as line}
 				<p>{line}</p>
