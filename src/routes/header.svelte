@@ -2,18 +2,13 @@
 	import {Navbar, NavBrand, NavHamburger, NavLi, NavUl} from 'flowbite-svelte';
 </script>
 
-<header>
-	<Navbar class="bg-surface-500">
-		<NavBrand  href="/">
-			<img src="/img/tuw-logo.png" class="" alt="Flowbite Logo" />
-		</NavBrand>
-		<NavHamburger  />
-		<NavUl>
-			<NavLi href="/">Home</NavLi>
-			<NavLi href="/about">About</NavLi>
-			<NavLi href="/contact">Contact</NavLi>
-		</NavUl>
-	</Navbar>
+<header class="bg-surface-500">
+	<img src="/img/tuw-logo.png" class="" alt="Flowbite Logo" />
+	<div class="btn-container text-primary-200">
+		<a href="/home">Home</a>
+		<a href="/about">About</a>
+		<a href="contact">Contact</a>
+	</div>
 </header>
 
 <style>
@@ -24,6 +19,26 @@
 		width: 100%;
 	}
 	img{
-		margin-left: 1.5rem;
+		margin-left: 5%;
 	}
+	.btn-container{
+			margin-left: auto;
+			max-width: 50%;
+			width: 20%;
+			margin-right: 5%;
+			font-size: 1.25em;
+			display: flex;
+			justify-content: space-between;
+      align-items: center;
+      overflow: auto;
+      flex-wrap: wrap;
+      gap: 1em;
+	}
+	a{
+			color: var(--brand-primary-400);
+	}
+  a:hover{
+      text-decoration: underline;
+      color: rgba(var(--color-primary-400) / 1);
+  }
 </style>

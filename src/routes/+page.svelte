@@ -2,10 +2,10 @@
 <script>
 	import Header from './header.svelte';
 	import Footer from './footer.svelte';
-	import {Slidy} from '@slidy/svelte'
-	import {flip} from "@slidy/animation";
-	import {getPhotos} from '../lib/photos.js'
-	import {blur, slide} from 'svelte/transition';
+	import { Slidy } from '@slidy/svelte';
+	import { flip } from '@slidy/animation';
+	import { getPhotos } from '../lib/photos.js';
+	import { blur, slide } from 'svelte/transition';
 
 	let index = 4, position = 0;
 
@@ -72,7 +72,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-		  rel="stylesheet">
+				rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=New+Amsterdam&display=swap" rel="stylesheet">
 	<title>
@@ -82,76 +82,95 @@
 
 <Header />
 <main>
-	<h2> Team Unwired's Project over the years</h2>
+	<div class="mt-2.5 text-center">
+		<h1 class="font-extrabold text-3xl ">Projects of Passion</h1>
+		<p class="text-tertiary-500  text-xl mt-2.5 mb-3">
+			<span class="font-bold dedication">WITH HOURS OF HARDWORK AND DEDICATION<br /></span>
+			<span class="font-light">we've created automotive engineering marvels over and over</span>
+		</p>
+	</div>
 	{#await getPhotos() then slides}
 		<Slidy
-				{slides}
-				bind:index
-				bind:position
-				snap="center"
-				animation={flip}
-				thumbnail
+			{slides}
+			bind:index
+			bind:position
+			snap="center"
+			animation={flip}
+			thumbnail
 		/>
 	{/await}
 	<div class="project-desc">
 		{#key index}
-			<h3 transition:slide><span class="project-name">{projectDescriptions[index][0]}</span></h3>
+			<h3 transition:slide><span class="project-name text-secondary-500">{projectDescriptions[index][0]}</span></h3>
 		{/key}
 		{#key index}
 		<span transition:blur class="acheivements">
-			{projectDescriptions[index][1]}
+			<span class="text-tertiary-500 font-bold text-xl mr-1">{projectDescriptions[index][1]}</span>
 			<span class="rank">{projectDescriptions[index][2]}</span>
 		</span>
 		{/key}
-		<h4>Specifications</h4>
+		<h4 class="text-primary-800 font-bold">Specifications</h4>
 		<div class="specs">{projectDescriptions[index][3]}</div>
 	</div>
 </main>
 <Footer/>
 
 <style>
-	@import url('https://unpkg.com/@slidy/svelte/dist/slidy.css');
-	h2{
-		text-align: center;
-	}
-	main{
-		margin-bottom: auto;
-		flex-grow: 1;
-		width: 100%;
-	}
+    @import url('https://unpkg.com/@slidy/svelte/dist/slidy.css');
 
-	.project-desc {
-		text-align: center;
-	}
+    h2 {
+        text-align: center;
+    }
 
-	.project-desc > h3 {
-		font-size: 3em;
-	}
+    main {
+        margin-bottom: auto;
+        flex-grow: 1;
+        width: 100%;
+    }
 
-	.project-desc > h4 {
-		line-height: 150%;
-		font-size: 1.75em;
-		font-family: 'Anek Devanagari', monospace;
-	}
+    .project-desc {
+        text-align: center;
+				max-width: 95%;
+				width: 95%;
+				margin-left: 2.5%;
+				display: flex;
+				flex-direction: column;
+				justify-items: center;
+    }
 
-	.project-name {
-		font-family: "New Amsterdam", sans-serif;
-		line-height: 200%;
-	}
+    .project-desc > h3 {
+        font-size: 3em;
+    }
 
-	.acheivements {
-		color: #a85a5a;
-		line-height: 500%;
-	}
+    .project-desc > h4 {
+        line-height: 150%;
+        font-size: 1.75em;
+        font-family: 'Anek Devanagari', monospace;
+    }
 
-	.specs {
-		font-family: 'Anek Devanagari', monospace;
-		font-size: 1.25em;
-		white-space: pre;
-	}
+    .project-name {
+        font-family: "New Amsterdam", sans-serif;
+        line-height: 200%;
+    }
 
-	.rank {
-		font-family: "Bebas Neue", sans-serif;
-		font-size: 1.5em;
-	}
+    .acheivements {
+        color: #a85a5a;
+        line-height: 500%;
+    }
+
+    .specs {
+        font-family: 'Anek Devanagari', monospace;
+        font-size: 1.25em;
+        white-space: pre;
+				overflow: scroll;
+    }
+
+    .rank {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.5em;
+    }
+
+    .dedication {
+        font-family: 'Anek Devanagari', monospace;
+    }
 </style>
