@@ -7,38 +7,32 @@
 	let index = 4, position = 0, limit = 6;
 	const slides = [
 		{
-			width: 400,
-			height: 400,
+			width: 200,
 			id: 1,
 			src: "/img/1.jpg",
 		},
 		{
-			width: 400,
-			height: 400,
+			width: 200,
 			id: 2,
 			src: "/img/2.jpg",
 		},
 		{
-			width: 400,
-			height: 400,
+			width: 200,
 			id: 3,
 			src: "/img/3.jpg",
 		},
 		{
-			width: 400,
-			height: 400,
+			width: 200,
 			id: 4,
 			src: "/img/4.jpg",
 		},
 		{
-			width: 400,
-			height: 400,
+			width: 200,
 			id: 5,
 			src: "/img/5.jpg",
 		},
 		{
-			width: 400,
-			height: 400,
+			width: 200,
 			id: 6,
 			src: "/img/6.jpg",
 		},
