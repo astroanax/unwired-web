@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<header class="bg-surface-500">
+<header class="bg-surface-700">
 	<img src="/img/tuw-logo.png" class="" alt="Flowbite Logo" />
 	<div class="btn-container text-primary-200">
 		<a href="/home">Home</a>

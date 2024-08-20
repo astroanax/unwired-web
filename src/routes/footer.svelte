@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<footer class="bg-surface-500">
+<footer class="bg-surface-700">
 	<div class="text-container">
 	<span class="font-bold">For enquiries contact</span>
 	<div>

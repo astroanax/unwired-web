@@ -69,22 +69,22 @@
 </script>
 
 <svelte:head>
-	<meta name="Team Unwired" content="NIT Calicut's Automotive club">
+	<meta name="description" content="NIT Calicut's Automotive club">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-				rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=New+Amsterdam&display=swap" rel="stylesheet">
+				rel="stylesheet" media="screen">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" media="screen">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=New+Amsterdam&display=swap" rel="stylesheet" media="screen">
 	<title>
 		Team Unwired - Projects
 	</title>
 </svelte:head>
 
 <Header />
-<main>
-	<div class="mt-2.5 text-center">
-		<h1 class="font-extrabold text-3xl ">Projects of Passion</h1>
+<main class="text-primary-200">
+	<div class="text-center">
+		<h1 class="font-extrabold text-3xl">Projects of Passion</h1>
 		<p class="text-tertiary-500  text-xl mt-2.5 mb-3">
 			<span class="font-bold dedication">WITH HOURS OF HARDWORK AND DEDICATION<br /></span>
 			<span class="font-light">we've created automotive engineering marvels over and over</span>
@@ -102,7 +102,7 @@
 	{/await}
 	<div class="project-desc">
 		{#key index}
-			<h3 transition:slide><span class="project-name text-secondary-500">{projectDescriptions[index][0]}</span></h3>
+			<h3 transition:slide><span class="project-name text-primary-300">{projectDescriptions[index][0]}</span></h3>
 		{/key}
 		{#key index}
 		<span transition:blur class="acheivements">
@@ -110,7 +110,7 @@
 			<span class="rank">{projectDescriptions[index][2]}</span>
 		</span>
 		{/key}
-		<h4 class="text-primary-800 font-bold">Specifications</h4>
+		<h4 class="text-secondnary-50 font-bold">Specifications</h4>
 		<div class="specs">
 			{#each projectDescriptions[index][3].split('\r\n') as line}
 				<p>{line}</p>
@@ -127,6 +127,7 @@
         margin-bottom: auto;
         flex-grow: 1;
         width: 100%;
+				background-color: #171C2F;
     }
 
     .project-desc {

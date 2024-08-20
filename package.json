@@ -35,6 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sinnwerkstatt/sveltekit-matomo": "github:sinnwerkstatt/sveltekit-matomo",
 		"@slidy/animation": "^1.0.8",
 		"@slidy/core": "^3.7.6",
 		"@slidy/svelte": "^3.4.4"
