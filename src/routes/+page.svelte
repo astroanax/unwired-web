@@ -110,7 +110,11 @@
 		</span>
 		{/key}
 		<h4 class="text-primary-800 font-bold">Specifications</h4>
-		<div class="specs">{projectDescriptions[index][3]}</div>
+		<div class="specs">
+			{#each projectDescriptions[index][3].split('\r\n') as line}
+				<p>{line}</p>
+			{/each}
+		</div>
 	</div>
 </main>
 <Footer/>
@@ -161,8 +165,6 @@
     .specs {
         font-family: 'Anek Devanagari', monospace;
         font-size: 1.25em;
-        white-space: pre;
-				overflow: scroll;
     }
 
     .rank {
