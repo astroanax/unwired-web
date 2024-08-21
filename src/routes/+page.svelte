@@ -10,8 +10,8 @@
 	import { projectDescriptions } from '$lib/projectDesc.js';
 	import { blur, slide } from 'svelte/transition';
 
-	let index = 2, position = 0;
-
+	let index = 2,
+		position = 0;
 </script>
 
 <svelte:head>
@@ -38,7 +38,9 @@
 
 <Header />
 <div class="h-1 w-full bg-primary-600"></div>
-<h1 class="mb-5 mt-5 w-full bg-secondary-50 text-center text-3xl font-extrabold text-primary-600 passion">
+<h1
+	class="passion mb-5 mt-5 w-full bg-secondary-50 text-center text-3xl font-extrabold text-primary-600"
+>
 	Projects of Passion
 </h1>
 <main class="text-primary-200">
@@ -70,7 +72,7 @@
 		{#key index}
 			<span transition:blur class="acheivements">
 				<span class="mr-1 text-2xl font-bold text-tertiary-500"
-				>{projectDescriptions[index][1]}</span
+					>{projectDescriptions[index][1]}</span
 				>
 				<span class="rank">{projectDescriptions[index][2]}</span>
 			</span>
@@ -87,66 +89,66 @@
 <Footer />
 
 <style>
-    :global(body) {
-        background-color: rgba(var(--color-secondary-50) / 1) !important;
-    }
+	:global(body) {
+		background-color: rgba(var(--color-secondary-50) / 1) !important;
+	}
 
-    main {
-        margin-bottom: auto;
-        flex-grow: 1;
-        width: 100%;
-        background-color: black !important;
-    }
+	main {
+		margin-bottom: auto;
+		flex-grow: 1;
+		width: 100%;
+		background-color: black !important;
+	}
 
-    .passion {
-        font-family: "Anek Devanagari", monospace;
-    }
+	.passion {
+		font-family: 'Anek Devanagari', monospace;
+	}
 
-    .slidy-container {
-        height: 25em;
-        max-height: 25em;
-        overflow: hidden;
-    }
+	.slidy-container {
+		height: 25em;
+		max-height: 25em;
+		overflow: hidden;
+	}
 
-    .project-desc {
-        text-align: center;
-        max-width: 95%;
-        width: 95%;
-        margin-left: 2.5%;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        height: 100%;
-    }
+	.project-desc {
+		text-align: center;
+		max-width: 95%;
+		width: 95%;
+		margin-left: 2.5%;
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		height: 100%;
+	}
 
-    .project-desc > h4 {
-        line-height: 150%;
-        font-size: 2em;
-        font-family: 'Anek Devanagari', monospace;
-    }
+	.project-desc > h4 {
+		line-height: 150%;
+		font-size: 2em;
+		font-family: 'Anek Devanagari', monospace;
+	}
 
-    .project-name {
-        font-family: 'New Amsterdam', sans-serif;
-        line-height: 200%;
-    }
+	.project-name {
+		font-family: 'New Amsterdam', sans-serif;
+		line-height: 200%;
+	}
 
-    .acheivements {
-        color: #a85a5a;
-        line-height: 500%;
-    }
+	.acheivements {
+		color: #a85a5a;
+		line-height: 500%;
+	}
 
-    .specs {
-        font-family: 'Anek Devanagari', monospace;
-        font-size: 1.25em;
-        margin-bottom: 5%;
-    }
+	.specs {
+		font-family: 'Anek Devanagari', monospace;
+		font-size: 1.25em;
+		margin-bottom: 5%;
+	}
 
-    .rank {
-        font-family: 'Bebas Neue', sans-serif;
-        font-size: 1.5em;
-    }
+	.rank {
+		font-family: 'Bebas Neue', sans-serif;
+		font-size: 1.5em;
+	}
 
-    .dedication {
-        font-family: 'Anek Devanagari', monospace;
-    }
+	.dedication {
+		font-family: 'Anek Devanagari', monospace;
+	}
 </style>
