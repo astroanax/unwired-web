@@ -22,3 +22,5 @@ And SEO was easy.
 ## Matomo analytics
 
 Analytics are configured for matomo. Didn't opt for google analytics since it was privacy invasive. Matomo is pretty great too, has a lot of great features.
+
+the stats are viewable anonymously at https://astroanaxtech.matomo.cloud
