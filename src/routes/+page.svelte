@@ -150,6 +150,7 @@
 		background-color: #171c2f;
 	}
 	.slidy-container {
+		font-display: optional;
 		height: 25em;
 		max-height: 25em;
 		overflow: hidden;
