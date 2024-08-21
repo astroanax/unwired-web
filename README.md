@@ -1,38 +1,24 @@
-# create-svelte
+# Project Submission for Team Unwired
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This repository contains the submission of Special Induction Round - Web Development for Team Unwired.
 
-## Creating a project
+This project has been made using [SvelteKit](https://kit.svelte.dev/) as a non-framework, along with [Tailwind CSS](https://tailwindcss.com/) and [Skeleton UI](https://www.skeleton.dev) for ease of CSS rules and themeing.
 
-If you're seeing this, you've probably already done this step. Congrats!
+For the image carousel, [Slidy](https://slidy-core.surge.sh) was used, and for the NavBar component, [Flowbite Svelte](https://flowbite-svelte.com/) was used.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Lighthouse results
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+![Lighthouse result - 94, 80, 96, 100](./lighthouse.png)
 
-## Developing
+Lighthouse results are mostly fine - performance takes a hit due to loading of remote fonts, as well lack of a strictly defined layout.
+![Lighthouse - Performance](./lighthouse-pf.png)
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Accessibility is nothing too much important - the aria-roles for the image carousel aren't configured properly. Apart from that, "Touch targets do not have sufficient space or sizing" for the thumbnails of the carousel. This can safely be ignored.
 
-```bash
-npm run dev
+Best practices isn't 100 since matomo logged errors (my browser blocks tracking) to the console.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+And SEO was easy.
 
-## Building
+## Matomo analytics
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Analytics are configured for matomo. Right now, it shows visitors only, can be improved further. Didn't opt for google analytics since it was privacy invasive.
