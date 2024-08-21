@@ -9,7 +9,7 @@
 	import { getPhotos } from '../lib/photos.js';
 	import { blur, slide } from 'svelte/transition';
 
-	let index = 4,
+	let index = 2,
 		position = 0;
 
 	const projectDescriptions = [
@@ -18,11 +18,11 @@
 			'SUPRA SAE India 2023',
 			'Overall AIR 27',
 			'Bajaj Dominar 400 engine\r\n' +
-				'Suspension: Front - Pull rod, Rear-Push rod\r\n' +
-				'Hanging Chassis\r\n' +
-				'ASI 4130 Chromoly Chassis\r\n' +
-				'7th in design\r\n' +
-				'10th in acceleration\r\n'
+			'Suspension: Front - Pull rod, Rear-Push rod\r\n' +
+			'Hanging Chassis\r\n' +
+			'ASI 4130 Chromoly Chassis\r\n' +
+			'7th in design\r\n' +
+			'10th in acceleration\r\n'
 		],
 
 		[
@@ -30,11 +30,11 @@
 			'GKDC GO-KART',
 			'Overall AIR 3',
 			'5KW, 48V PMSM MOTOR,\r\n' +
-				'IP67 rated LI-ion NMC battery pack 120AH 48V CAPACITY\r\n' +
-				'SKF bearings\r\n' +
-				'1st in Brakes\r\n' +
-				'2nd in Acceleration\r\n' +
-				'2nd in Business Plan\r\n'
+			'IP67 rated LI-ion NMC battery pack 120AH 48V CAPACITY\r\n' +
+			'SKF bearings\r\n' +
+			'1st in Brakes\r\n' +
+			'2nd in Acceleration\r\n' +
+			'2nd in Business Plan\r\n'
 		],
 
 		[
@@ -42,8 +42,8 @@
 			'SAE SUPRA 2022',
 			'Overall AIR 24',
 			'Baja Dominar 400 engine\r\n' +
-				'ASI 4130 Chromoly\r\n' +
-				'Suspension: Front and Rear Pushrod suspension\r\n'
+			'ASI 4130 Chromoly\r\n' +
+			'Suspension: Front and Rear Pushrod suspension\r\n'
 		],
 
 		[
@@ -51,11 +51,11 @@
 			'SAE E-BAJA 2020',
 			'Overall AIR 24',
 			'4.5 kW BLDC motor\r\n' +
-				'Battery 110 AH\r\n' +
-				'AISI 4130 chromoly chassis\r\n' +
-				'9th in cost\r\n' +
-				'7th in design\r\n' +
-				'10th in acceleration\r\n'
+			'Battery 110 AH\r\n' +
+			'AISI 4130 chromoly chassis\r\n' +
+			'9th in cost\r\n' +
+			'7th in design\r\n' +
+			'10th in acceleration\r\n'
 		],
 
 		[
@@ -63,11 +63,11 @@
 			'SUPRA SAE India 2019',
 			'Overall AIR 24',
 			'KTM Duke 390RC (373.2 cc), 42.90HP@ 9000 RPM,\r\n' +
-				'Torsen T-1 Limited Slip Differential\r\n' +
-				'AISI 4130 chromoly chassis\r\n' +
-				'9th in cost\r\n' +
-				'7th in design\r\n' +
-				'10th in acceleration\r\n'
+			'Torsen T-1 Limited Slip Differential\r\n' +
+			'AISI 4130 chromoly chassis\r\n' +
+			'9th in cost\r\n' +
+			'7th in design\r\n' +
+			'10th in acceleration\r\n'
 		],
 
 		[
@@ -75,10 +75,29 @@
 			'SUPRA SAE INDIA 2017',
 			'25th OUT OF 60',
 			'KTM Duke 390RC (373.2 cc), 42.90HP@ 9000 RPM,\r\n' +
-				'Torsen T-1 Limited Slip Differential\r\n' +
-				'AISI 4130 chromoly chassis\r\n' +
-				'Double wishbone, rear rocker arm suspension\r\n' +
-				'3D Printed air intake unit and remapped ECU\r\n'
+			'Torsen T-1 Limited Slip Differential\r\n' +
+			'AISI 4130 chromoly chassis\r\n' +
+			'Double wishbone, rear rocker arm suspension\r\n' +
+			'3D Printed air intake unit and remapped ECU\r\n'
+		],
+		[
+			"TEQUIP GASOTECH UNWIND 5.0",
+			"BAJA SAE INDIA 2017", "22nd OUT OF 150 TEAMS",
+			"10HP Briggs & Stratton OHV engine\r\n" +
+			"Chromoly AISI 4130\r\n" +
+			"Front A arm, rear multi-link Suspension\r\n" +
+			"Open differential\r\n" +
+			"Custom made transmission\r\n" +
+			"12th IN ENDURANCE\r\n"
+		],
+		[
+			"GASOTECH UNWIND 3.0",
+			"BAJA SAE INDIA 2017", "22nd OUT OF 150 TEAMS",
+			"10HP Briggs & Stratton OHV engine\r\n" +
+			"Chromoly AISI 4130\r\n" +
+			"Double Wishbone Suspension\r\n" +
+			"Open differential\r\n" +
+			"Mahindra GIO transmission\r\n"
 		]
 	];
 </script>
@@ -139,7 +158,7 @@
 		{#key index}
 			<span transition:blur class="acheivements">
 				<span class="mr-1 text-2xl font-bold text-tertiary-500"
-					>{projectDescriptions[index][1]}</span
+				>{projectDescriptions[index][1]}</span
 				>
 				<span class="rank">{projectDescriptions[index][2]}</span>
 			</span>
@@ -152,67 +171,70 @@
 		</div>
 	</div>
 </main>
+<div class="h-1 w-full bg-primary-600"></div>
 <Footer />
 
 <style>
-	:global(body) {
-		background-color: rgba(var(--color-secondary-50) / 1) !important;
-	}
-	main {
-		margin-bottom: auto;
-		flex-grow: 1;
-		width: 100%;
-		background-color: #171c2f;
-	}
-	.passion{
-			font-family: "Anek Devanagari", monospace;
-	}
-	.slidy-container {
-		font-display: optional;
-		height: 25em;
-		max-height: 25em;
-		overflow: hidden;
-	}
+    :global(body) {
+        background-color: rgba(var(--color-secondary-50) / 1) !important;
+    }
 
-	.project-desc {
-		text-align: center;
-		max-width: 95%;
-		width: 95%;
-		margin-left: 2.5%;
-		display: flex;
-		flex-direction: column;
-		justify-items: center;
-		height: 100%;
-	}
+    main {
+        margin-bottom: auto;
+        flex-grow: 1;
+        width: 100%;
+        background-color: rgba(var(--color-secondary-700) / 1) !important;
+    }
 
-	.project-desc > h4 {
-		line-height: 150%;
-		font-size: 2em;
-		font-family: 'Anek Devanagari', monospace;
-	}
+    .passion {
+        font-family: "Anek Devanagari", monospace;
+    }
 
-	.project-name {
-		font-family: 'New Amsterdam', sans-serif;
-		line-height: 200%;
-	}
+    .slidy-container {
+        height: 25em;
+        max-height: 25em;
+        overflow: hidden;
+    }
 
-	.acheivements {
-		color: #a85a5a;
-		line-height: 500%;
-	}
+    .project-desc {
+        text-align: center;
+        max-width: 95%;
+        width: 95%;
+        margin-left: 2.5%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        height: 100%;
+    }
 
-	.specs {
-		font-family: 'Anek Devanagari', monospace;
-		font-size: 1.25em;
-		margin-bottom: 5%;
-	}
+    .project-desc > h4 {
+        line-height: 150%;
+        font-size: 2em;
+        font-family: 'Anek Devanagari', monospace;
+    }
 
-	.rank {
-		font-family: 'Bebas Neue', sans-serif;
-		font-size: 1.5em;
-	}
+    .project-name {
+        font-family: 'New Amsterdam', sans-serif;
+        line-height: 200%;
+    }
 
-	.dedication {
-		font-family: 'Anek Devanagari', monospace;
-	}
+    .acheivements {
+        color: #a85a5a;
+        line-height: 500%;
+    }
+
+    .specs {
+        font-family: 'Anek Devanagari', monospace;
+        font-size: 1.25em;
+        margin-bottom: 5%;
+    }
+
+    .rank {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1.5em;
+    }
+
+    .dedication {
+        font-family: 'Anek Devanagari', monospace;
+    }
 </style>

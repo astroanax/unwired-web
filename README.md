@@ -21,4 +21,4 @@ And SEO was easy.
 
 ## Matomo analytics
 
-Analytics are configured for matomo. Right now, it shows visitors only, can be improved further. Didn't opt for google analytics since it was privacy invasive.
+Analytics are configured for matomo. Didn't opt for google analytics since it was privacy invasive. Matomo is pretty great too, has a lot of great features.
