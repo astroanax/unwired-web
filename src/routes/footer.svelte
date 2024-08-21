@@ -2,7 +2,7 @@
 	import { base } from '$app/paths';
 </script>
 
-<footer class="bg-surface-700">
+<footer class="bg-black">
 	<div class="text-container mb-2.5 mt-2.5">
 		<span class="font-bold text-tertiary-400">For enquiries contact</span>
 		<div>

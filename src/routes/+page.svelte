@@ -183,7 +183,7 @@
         margin-bottom: auto;
         flex-grow: 1;
         width: 100%;
-        background-color: rgba(var(--color-secondary-700) / 1) !important;
+        background-color: black !important;
     }
 
     .passion {

@@ -8,7 +8,7 @@ export async function getPhotos(size = { width: window.innerWidth, height: windo
 		[`${base}/img/5c.webp`, 15.7, '5'],
 		[`${base}/img/3c.webp`, 13.5, '3'],
 		[`${base}/img/4c.webp`, 15, '4'],
-		[`${base}/img/9c.webp`, 16, '9']
+		[`${base}/img/8c.webp`, 16, '9']
 	];
 
 	return photos.reduce((acc, [src, aspectRatio, alt]) => {
