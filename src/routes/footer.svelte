@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 </script>
 
 <footer class="bg-surface-700">
@@ -25,11 +26,11 @@
 	</div>
 	</div>
 	<div class="img-container">
-		<a href="https://nitc.ac.in/"><img src="/img/nitc-logo.jpg" id="nitc-logo" alt="NIT Calicut"></a>
+		<a href="https://nitc.ac.in/"><img src="{base}/img/nitc-logo.jpg" id="nitc-logo" alt="NIT Calicut"></a>
 	<div class="social-container">
-		<a href="https://www.instagram.com/teamunwired_nitcalicut/"><img src="/img/instagram.webp" class="social-icon" alt="Instagram"></a>
-		<a href="https://www.youtube.com/channel/UCZ-1FWuBQePQeAdoZx1S7Pw"><img src="/img/youtube.png" class="social-icon" alt="Youtube"></a>
-		<a href="https://www.linkedin.com/company/team-unwired/"><img src="/img/linkedin.png" class="social-icon" alt="LinkedIn"></a>
+		<a href="https://www.instagram.com/teamunwired_nitcalicut/"><img src="{base}/img/instagram.webp" class="social-icon" alt="Instagram"></a>
+		<a href="https://www.youtube.com/channel/UCZ-1FWuBQePQeAdoZx1S7Pw"><img src="{base}/img/youtube.png" class="social-icon" alt="Youtube"></a>
+		<a href="https://www.linkedin.com/company/team-unwired/"><img src="{base}/img/linkedin.png" class="social-icon" alt="LinkedIn"></a>
 	</div>
 	</div>
 </footer>

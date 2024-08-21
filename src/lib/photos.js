@@ -1,11 +1,12 @@
+import { base } from '$app/paths';
 export async function getPhotos(size = {width: window.innerWidth, height: window.innerHeight}) {
     const photos = [
-        ["/img/1c.jpg", 13.3, "1"],
-        ["/img/2c.jpg", 15, "2"],
-        ["/img/3c.jpg", 13.5, "3"],
-        ["/img/4c.jpg", 15, "4"],
-        ["/img/5c.jpg", 15.7, "5"],
-        ["/img/6c.jpg", 15, "6"],
+        [`${base}/img/1c.jpg`, 13.3, "1"],
+        [`${base}/img/2c.jpg`, 15, "2"],
+        [`${base}/img/3c.jpg`, 13.5, "3"],
+        [`${base}/img/4c.jpg`, 15, "4"],
+        [`${base}/img/5c.jpg`, 15.7, "5"],
+        [`${base}/img/6c.jpg`, 15, "6"],
     ];
 
     return photos.reduce((acc, [src, aspectRatio, alt]) => {

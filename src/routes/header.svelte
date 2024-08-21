@@ -1,12 +1,13 @@
 <script>
+	import { base } from '$app/paths';
 </script>
 
 <header class="bg-surface-700">
-	<img src="/img/tuw-logo.png" class="" alt="Flowbite Logo" />
+	<img src="{base}/img/tuw-logo.png" class="" alt="Flowbite Logo" />
 	<div class="btn-container text-primary-200">
-		<a href="/home">Home</a>
-		<a href="/about">About</a>
-		<a href="contact">Contact</a>
+		<a href="{base}/">Home</a>
+		<a href="http://teamunwired.org/about.html">About</a>
+		<a href="http://teamunwired.org/contact.html">Contact</a>
 	</div>
 </header>
 
