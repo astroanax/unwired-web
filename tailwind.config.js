@@ -18,6 +18,9 @@ import { join } from 'path';
 // 1. Import the Skeleton plugin
 import { skeleton } from '@skeletonlabs/tw-plugin';
 
+const plugin = require('tailwindcss/plugin')
+
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	// 2. Opt for dark mode to be handled via the class method
@@ -39,6 +42,21 @@ export default {
 				custom: [tuwTheme],
 				preset: ['crimson']
 			}
-		})
+		}),
+		plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          "animation-delay": (value) => {
+            return {
+              "animation-delay": value,
+            };
+          },
+        },
+        {
+          values: theme("transitionDelay"),
+        }
+      );
+    })
+
 	]
 };

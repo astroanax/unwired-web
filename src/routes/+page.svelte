@@ -106,17 +106,18 @@
 </svelte:head>
 
 <Header />
+<div class="h-1 w-full bg-primary-600"></div>
 <main class="text-primary-200">
 	<div class="text-center">
-		<h1 class="text-3xl font-extrabold">Projects of Passion</h1>
-		<p class="mb-3 mt-2.5 text-xl text-tertiary-500">
+		<h1 class="text-3xl font-extrabold mt-5">Projects of Passion</h1>
+		<p class="text-xl text-tertiary-500 mt-5 mb-3">
 			<span class="dedication font-bold">WITH HOURS OF HARDWORK AND DEDICATION<br /></span>
 			<span class="font-light">we've created automotive engineering marvels over and over</span>
 		</p>
 	</div>
 	<div class="slidy-container">
 		{#await getPhotos() then slides}
-			<Slidy {slides} bind:index bind:position snap="center" animation={flip} thumbnail />
+			<Slidy {slides} bind:index bind:position snap="center" animation={flip} thumbnail  --slidy-thumbnail-size="5em" />
 		{/await}
 	</div>
 	<div class="project-desc">
@@ -143,6 +144,9 @@
 <Footer />
 
 <style>
+    :global(body){
+				background-color: #171c2f;
+		}
 	main {
 		margin-bottom: auto;
 		flex-grow: 1;
@@ -165,6 +169,7 @@
 		flex-direction: column;
 		justify-items: center;
 		height: 100%;
+			margin-bottom: 5%;
 	}
 
 	.project-desc > h3 {
