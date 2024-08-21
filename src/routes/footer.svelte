@@ -3,7 +3,7 @@
 </script>
 
 <footer class="bg-surface-700">
-	<div class="text-container">
+	<div class="text-container mb-2.5 mt-2.5">
 		<span class="font-bold text-tertiary-400">For enquiries contact</span>
 		<div>
 			Dr. V Sajith, Associate Professor(MED) & Faculty Advisor<br />

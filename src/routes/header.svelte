@@ -9,11 +9,19 @@
 			<NavBrand href="/">
 				<img src="{base}/img/tuw-logo.png" class="" alt="Team Unwired Logo" />
 			</NavBrand>
-			<NavHamburger class="bg-surface-400 hover:bg-surface-500 text-primary-200"/>
+			<NavHamburger class="bg-surface-400 text-primary-200 hover:bg-surface-500" />
 			<NavUl classUl="bg-surface-700" class="customanim">
-				<NavLi class="text-xl link hover:bg-primary-900 hover:text-secondary-100" href="/">Home</NavLi>
-				<NavLi class="text-xl link hover:bg-primary-900 hover:text-secondary-100" href="http://teamunwired.org/about.html">About</NavLi>
-				<NavLi class="text-xl link hover:bg-primary-900 hover:text-secondary-100" href="http://teamunwired.org/contact.html">Contact</NavLi>
+				<NavLi class="link text-xl hover:bg-primary-900 hover:text-secondary-100" href="/"
+					>Home</NavLi
+				>
+				<NavLi
+					class="link text-xl hover:bg-primary-900 hover:text-secondary-100"
+					href="http://teamunwired.org/about.html">About</NavLi
+				>
+				<NavLi
+					class="link text-xl hover:bg-primary-900 hover:text-secondary-100"
+					href="http://teamunwired.org/contact.html">Contact</NavLi
+				>
 			</NavUl>
 		</NavContainer>
 	</Navbar>

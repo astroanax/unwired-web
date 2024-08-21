@@ -9,10 +9,9 @@
 .link:hover {
 	color: rgba(var(--color-primary-300) / 1) !important;
 	text-decoration: underline;
-	text-decoration-color: rgba(var(--color-primary-500) / 1);;
+	text-decoration-color: rgba(var(--color-primary-500) / 1);
 	font-weight: 900;
 }
-
 
 .customanim {
 	animation-duration: 150ms !important;

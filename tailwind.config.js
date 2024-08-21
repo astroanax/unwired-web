@@ -18,8 +18,7 @@ import { join } from 'path';
 // 1. Import the Skeleton plugin
 import { skeleton } from '@skeletonlabs/tw-plugin';
 
-const plugin = require('tailwindcss/plugin')
-
+const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -44,19 +43,18 @@ export default {
 			}
 		}),
 		plugin(({ matchUtilities, theme }) => {
-      matchUtilities(
-        {
-          "animation-delay": (value) => {
-            return {
-              "animation-delay": value,
-            };
-          },
-        },
-        {
-          values: theme("transitionDelay"),
-        }
-      );
-    })
-
+			matchUtilities(
+				{
+					'animation-delay': (value) => {
+						return {
+							'animation-delay': value
+						};
+					}
+				},
+				{
+					values: theme('transitionDelay')
+				}
+			);
+		})
 	]
 };
