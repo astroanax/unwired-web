@@ -29,7 +29,7 @@
 	</div>
 	<div class="img-container">
 		<a class="link" href="https://nitc.ac.in/"
-			><img src="{base}/img/nitc-logo.jpg" id="nitc-logo" alt="NIT Calicut" /></a
+			><img src="{base}/img/nitc-logo.webp" id="nitc-logo" alt="NIT Calicut" /></a
 		>
 		<div class="social-container">
 			<a class="link" href="https://www.instagram.com/teamunwired_nitcalicut/"
