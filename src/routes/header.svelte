@@ -12,28 +12,28 @@
 </header>
 
 <style>
+	header {
+		display: flex;
+		font-family: 'Anek Devanagari', monospace;
+		align-items: center;
+		width: 100%;
+	}
 
-    header {
-        display: flex;
-        font-family: 'Anek Devanagari', monospace;
-        align-items: center;
-        width: 100%;
-    }
+	img {
+		margin-left: 5%;
+	}
 
-    img {
-        margin-left: 5%;
-    }
-
-    .btn-container {
-        margin-left: auto;
-        max-width: 50%;
-        width: 20%;
-        margin-right: 5%;
-        font-size: 1.25em;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1em;
-    }
+	.btn-container {
+		margin-left: auto;
+		max-width: 50%;
+		width: 20%;
+		margin-right: 5%;
+		font-size: 1.25em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		overflow: visible;
+		flex-wrap: wrap;
+		gap: 1em;
+	}
 </style>

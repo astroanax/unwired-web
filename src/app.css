@@ -3,10 +3,10 @@
 @import 'tailwindcss/utilities';
 
 .link {
-    color: rgba(var(--color-primary-400) / 1);
+	color: rgba(var(--color-primary-400) / 1);
 }
 
 .link:hover {
-    text-decoration: underline;
-    font-weight: 900;
+	text-decoration: underline;
+	font-weight: 900;
 }
