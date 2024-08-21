@@ -11,9 +11,9 @@
 			</NavBrand>
 			<NavHamburger class="bg-surface-400 hover:bg-surface-500 text-primary-200"/>
 			<NavUl classUl="bg-surface-700" class="customanim">
-				<NavLi class="text-xl link" href="/">Home</NavLi>
-				<NavLi class="text-xl link" href="http://teamunwired.org/about.html">About</NavLi>
-				<NavLi class="text-xl link" href="http://teamunwired.org/contact.html">Contact</NavLi>
+				<NavLi class="text-xl link hover:bg-primary-900 hover:text-secondary-100" href="/">Home</NavLi>
+				<NavLi class="text-xl link hover:bg-primary-900 hover:text-secondary-100" href="http://teamunwired.org/about.html">About</NavLi>
+				<NavLi class="text-xl link hover:bg-primary-900 hover:text-secondary-100" href="http://teamunwired.org/contact.html">Contact</NavLi>
 			</NavUl>
 		</NavContainer>
 	</Navbar>

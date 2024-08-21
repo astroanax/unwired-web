@@ -107,28 +107,28 @@
 
 <Header />
 <div class="h-1 w-full bg-primary-600"></div>
+<h1 class="text-3xl text-center font-extrabold mt-5 mb-5 w-full bg-secondary-50 text-primary-600">Projects of Passion</h1>
 <main class="text-primary-200">
 	<div class="text-center">
-		<h1 class="text-3xl font-extrabold mt-5">Projects of Passion</h1>
-		<p class="text-xl text-tertiary-500 mt-5 mb-3">
+		<p class="text-xl text-tertiary-500  ">
 			<span class="dedication font-bold">WITH HOURS OF HARDWORK AND DEDICATION<br /></span>
 			<span class="font-light">we've created automotive engineering marvels over and over</span>
 		</p>
 	</div>
-	<div class="slidy-container">
+	<div class="slidy-container mt-3">
 		{#await getPhotos() then slides}
 			<Slidy {slides} bind:index bind:position snap="center" animation={flip} thumbnail  --slidy-thumbnail-size="5em" />
 		{/await}
 	</div>
+	{#key index}
+		<h1 transition:slide class="bg-secondary-50 text-primary-600 text-center text-5xl">
+			<span class="w-full project-name">{projectDescriptions[index][0]}</span>
+		</h1>
+	{/key}
 	<div class="project-desc">
 		{#key index}
-			<h3 transition:slide>
-				<span class="project-name text-secondary-200">{projectDescriptions[index][0]}</span>
-			</h3>
-		{/key}
-		{#key index}
 			<span transition:blur class="acheivements">
-				<span class="mr-1 text-xl font-bold text-tertiary-500">{projectDescriptions[index][1]}</span
+				<span class="mr-1 text-2xl font-bold text-tertiary-500">{projectDescriptions[index][1]}</span
 				>
 				<span class="rank">{projectDescriptions[index][2]}</span>
 			</span>
@@ -145,7 +145,7 @@
 
 <style>
     :global(body){
-				background-color: #171c2f;
+				background-color: rgba(var(--color-secondary-50) / 1) !important;
 		}
 	main {
 		margin-bottom: auto;
@@ -169,7 +169,6 @@
 		flex-direction: column;
 		justify-items: center;
 		height: 100%;
-			margin-bottom: 5%;
 	}
 
 	.project-desc > h3 {
@@ -178,7 +177,7 @@
 
 	.project-desc > h4 {
 		line-height: 150%;
-		font-size: 1.75em;
+		font-size: 2em;
 		font-family: 'Anek Devanagari', monospace;
 	}
 
@@ -195,6 +194,7 @@
 	.specs {
 		font-family: 'Anek Devanagari', monospace;
 		font-size: 1.25em;
+			margin-bottom: 5%;
 	}
 
 	.rank {
