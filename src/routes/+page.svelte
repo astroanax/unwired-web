@@ -107,7 +107,7 @@
 
 <Header />
 <div class="h-1 w-full bg-primary-600"></div>
-<h1 class="mb-5 mt-5 w-full bg-secondary-50 text-center text-3xl font-extrabold text-primary-600">
+<h1 class="mb-5 mt-5 w-full bg-secondary-50 text-center text-3xl font-extrabold text-primary-600 passion">
 	Projects of Passion
 </h1>
 <main class="text-primary-200">
@@ -163,6 +163,9 @@
 		flex-grow: 1;
 		width: 100%;
 		background-color: #171c2f;
+	}
+	.passion{
+			font-family: "Anek Devanagari", monospace;
 	}
 	.slidy-container {
 		font-display: optional;

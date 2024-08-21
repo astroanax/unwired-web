@@ -6,12 +6,12 @@
 <header class="bg-surface-700">
 	<Navbar let:NavContainer class="bg-surface-700">
 		<NavContainer class="bg-surface-700">
-			<NavBrand href="/">
-				<img src="{base}/img/tuw-logo.png" class="" alt="Team Unwired Logo" />
+			<NavBrand href="{base}/">
+				<img src="{base}/img/tuw-logo.png" alt="Team Unwired Logo" />
 			</NavBrand>
 			<NavHamburger class="bg-surface-400 text-primary-200 hover:bg-surface-500" />
 			<NavUl classUl="bg-surface-700" class="customanim">
-				<NavLi class="link text-xl hover:bg-primary-900 hover:text-secondary-100" href="/"
+				<NavLi class="link text-xl hover:bg-primary-900 hover:text-secondary-100" href="{base}/"
 					>Home</NavLi
 				>
 				<NavLi
