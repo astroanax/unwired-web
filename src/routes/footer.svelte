@@ -26,6 +26,7 @@
 			National Institute of Technology, Calicut<br />
 			Kattangal, Kerala India
 		</div>
+		<p class="ml-1 font-light text-tertiary-400">Copyright© 2024</p>
 	</div>
 	<div class="img-container">
 		<a class="link" href="https://nitc.ac.in/"

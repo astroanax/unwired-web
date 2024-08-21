@@ -7,7 +7,7 @@
 }
 
 .link:hover {
-	color: rgba(var(--color-primary-300) / 1) !important;
+	color: rgba(var(--color-primary-400) / 1) !important;
 	text-decoration: underline;
 	text-decoration-color: rgba(var(--color-primary-500) / 1);
 	font-weight: 900;
@@ -16,4 +16,7 @@
 .customanim {
 	animation-duration: 150ms !important;
 	animation-delay: 50ms !important;
+}
+.header-navbar{
+	background-position: center;
 }
