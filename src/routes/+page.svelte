@@ -43,14 +43,15 @@
 >
 	Projects of Passion
 </div>
+<p class="bg-black h-48 flex flex-col justify-center text-center text-xl text-tertiary-500">
+	<span class="dedication font-bold">WITH HOURS OF HARDWORK AND DEDICATION<br /></span>
+	<span class="font-light">we've created automotive engineering marvels over and over</span>
+</p>
+<div ></div>
 <main class="text-primary-200">
 	<div class="text-center">
-		<p class="text-xl text-tertiary-500 mb-10">
-			<span class="dedication font-bold">WITH HOURS OF HARDWORK AND DEDICATION<br /></span>
-			<span class="font-light">we've created automotive engineering marvels over and over</span>
-		</p>
 	</div>
-	<div class="slidy-container mt-3">
+	<div class="slidy-container">
 		{#await getPhotos() then slides}
 			<Slidy
 				{slides}
