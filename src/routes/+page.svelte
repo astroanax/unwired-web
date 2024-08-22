@@ -38,14 +38,14 @@
 
 <Header />
 <div class="h-1 w-full bg-primary-600"></div>
-<h1
-	class="passion mb-5 mt-5 w-full bg-secondary-50 text-center text-3xl font-extrabold text-primary-600"
+<div
+	class="passion h-32 flex justify-center items-center w-full bg-secondary-50 text-center text-4xl font-extrabold text-primary-600"
 >
 	Projects of Passion
-</h1>
+</div>
 <main class="text-primary-200">
 	<div class="text-center">
-		<p class="text-xl text-tertiary-500">
+		<p class="text-xl text-tertiary-500 mb-10">
 			<span class="dedication font-bold">WITH HOURS OF HARDWORK AND DEDICATION<br /></span>
 			<span class="font-light">we've created automotive engineering marvels over and over</span>
 		</p>
@@ -64,14 +64,14 @@
 		{/await}
 	</div>
 	{#key index}
-		<h1 transition:slide class="bg-secondary-50 text-center text-5xl text-primary-600">
+		<h1 transition:slide class="mb-8 bg-secondary-50 text-center text-5xl text-primary-600">
 			<span class="project-name w-full">{projectDescriptions[index][0]}</span>
 		</h1>
 	{/key}
 	<div class="project-desc">
 		{#key index}
-			<span transition:blur class="acheivements">
-				<span class="mr-1 text-2xl font-bold text-tertiary-500"
+			<span transition:blur class="achievements mb-8">
+				<span class="text-2xl font-bold text-tertiary-500"
 					>{projectDescriptions[index][1]}</span
 				>
 				<span class="rank">{projectDescriptions[index][2]}</span>
@@ -129,12 +129,10 @@
 
 	.project-name {
 		font-family: 'New Amsterdam', sans-serif;
-		line-height: 200%;
 	}
 
-	.acheivements {
+	.achievements {
 		color: #a85a5a;
-		line-height: 500%;
 	}
 
 	.specs {
