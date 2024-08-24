@@ -62,6 +62,7 @@
 				 snap="center"
 				animation={flip}
 				thumbnail
+				indent=10
 				--slidy-thumbnail-size="5em"
 			/>
 		{/await}

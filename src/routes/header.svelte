@@ -7,7 +7,7 @@
 <header class="bg-black z-10 sticky top-0">
 	<Navbar
 		let:NavContainer
-		class="header-navbar bg-black bg-opacity-85"
+		class="header-navbar bg-black bg-opacity-85 bg-no-repeat bg-cover"
 		style="background-image: url({headerBg})"
 	>
 		<NavContainer class="bg-black bg-opacity-80">
