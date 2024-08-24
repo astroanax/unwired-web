@@ -4,7 +4,7 @@
 	import { Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
 </script>
 
-<header class="bg-black z-10 fixed">
+<header class="bg-black z-10 sticky top-0">
 	<Navbar
 		let:NavContainer
 		class="header-navbar bg-black bg-opacity-85"
