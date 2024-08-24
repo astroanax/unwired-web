@@ -10,11 +10,12 @@
 	import { projectDescriptions } from '$lib/projectDesc.js';
 	import { blur, slide } from 'svelte/transition';
 
-	let index = 2,
+	let index = 0,
 		position = 0;
 </script>
 
 <svelte:head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="NIT Calicut's Automotive club" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -51,7 +52,8 @@
 <main class="text-primary-200">
 	<div class="text-center">
 	</div>
-	<div class="slidy-container">
+	<div class="md:flex md:flex-row">
+	<div class="slidy-container md:max-w-[50%]">
 		{#await getPhotos() then slides}
 			<Slidy
 				{slides}
@@ -64,12 +66,12 @@
 			/>
 		{/await}
 	</div>
-	{#key index}
-		<h1 transition:slide class="mb-8 bg-secondary-50 text-center text-5xl text-primary-600">
-			<span class="project-name w-full">{projectDescriptions[index][0]}</span>
-		</h1>
-	{/key}
 	<div class="project-desc">
+		{#key index}
+			<h1 transition:slide class="mb-8 bg-secondary-50 text-center text-5xl text-primary-600">
+				<span class="project-name w-full">{projectDescriptions[index][0]}</span>
+			</h1>
+		{/key}
 		{#key index}
 			<span transition:blur class="achievements mb-8">
 				<span class="text-2xl font-bold text-tertiary-500"
@@ -84,6 +86,7 @@
 				<p>{line}</p>
 			{/each}
 		</div>
+	</div>
 	</div>
 </main>
 <div class="h-1 w-full bg-primary-600"></div>
