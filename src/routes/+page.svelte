@@ -59,7 +59,7 @@
 				{slides}
 				bind:index
 				bind:position
-				snap="center"
+				 snap="center"
 				animation={flip}
 				thumbnail
 				--slidy-thumbnail-size="5em"
