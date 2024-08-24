@@ -4,7 +4,7 @@
   import { Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
 </script>
 
-<header class="sticky top-0 z-10">
+<header class="sticky top-0 z-10 max-h-[20vh]">
   <Navbar
     let:NavContainer
     class="header-navbar bg-opacity-85 bg-cover bg-no-repeat shadow-[inset_0_0_1000px_1000px_rgba(0,0,0,0.85)]"
@@ -40,7 +40,7 @@
         </NavLi>
         <NavLi
           class="link text-xl hover:bg-primary-900 hover:text-secondary-100"
-          href="http://teamunwired.org/sponsors.html"
+          href="{base}/sponsors"
           >Sponsors
         </NavLi>
         <NavLi
