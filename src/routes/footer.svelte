@@ -3,100 +3,20 @@
 </script>
 
 <footer class="bg-black">
-	<div class="text-container mb-2.5 mt-2.5">
-		<span class="font-bold text-tertiary-400">For enquiries contact</span>
-		<div>
-			Dr. V Sajith, Associate Professor(MED) & Faculty Advisor<br />
-			Team Unwired, NIT Calicut<br />
-			+91 9446361125, <a class="link" href="mailto:sajith@nitc.ac.in">sajith@nitc.ac.in</a>
-		</div>
-		<br />
-		<span class="font-bold text-tertiary-400">For more information</span>
-		<div>
-			Dr. Shijo Thomas, Associate Professor(MED) & Faculty Advisor<br />
-			Team Unwired, NIT Calicut<br />
-			+91 9446276409, <a class="link" href="mailto:shijo@nitc.ac.in">shijo@nitc.ac.in</a>
-		</div>
-		<br />
-		<span class="font-bold text-tertiary-400">Contact address</span>
-		<div>
-			Team Unwired<br />
-			C/o Dr.V Sajith / Dr.Shijo Thomas<br />
-			Department of Materials Science and Engineering<br />
-			National Institute of Technology, Calicut<br />
-			Kattangal, Kerala India
-		</div>
-		<p class="ml-1 font-light text-tertiary-400">Copyright© 2024</p>
+	<div class="min-h-full flex flex-col items-center justify-between md:flex-row">
+	<div class="max-w-[100%] w-[100%] mb-2.5 mt-2.5 justify-evenly items-center flex flex-row">
+		<img src="{base}/img/tuw-logo.png" alt="Team Unwired Logo" />
+		<a href="https://nitc.ac.in/"><img src="{base}/img/nitc-logo.webp" class="h-auto w-auto max-w-full max-h-20 md:max-h-40" alt="NIT Calicut" /></a>
 	</div>
-	<div class="img-container">
-		<a class="link" href="https://nitc.ac.in/"
-			><img src="{base}/img/nitc-logo.webp" id="nitc-logo" alt="NIT Calicut" /></a
-		>
-		<div class="social-container">
+		<div class="flex items-center justify-evenly max-w-[100%] w-[100%] sm:justify-evenly sm:items-center sm:max-w-full sm:w-full sm:mb-5">
 			<a class="link" href="https://www.instagram.com/teamunwired_nitcalicut/"
-				><img src="{base}/img/instagram.webp" class="social-icon" alt="Instagram" /></a
+				><img src="{base}/img/instagram.webp" class="max-w-10" alt="Instagram" /></a
 			>
 			<a class="link" href="https://www.youtube.com/channel/UCZ-1FWuBQePQeAdoZx1S7Pw"
-				><img src="{base}/img/youtube.png" class="social-icon" alt="Youtube" /></a
+				><img src="{base}/img/youtube.png" class="max-w-10" alt="Youtube" /></a
 			>
 			<a class="link" href="https://www.linkedin.com/company/team-unwired/"
-				><img src="{base}/img/linkedin.png" class="social-icon" alt="LinkedIn" /></a
+				><img src="{base}/img/linkedin.png" class="max-w-10" alt="LinkedIn" /></a
 			>
-		</div>
-	</div>
+		</div></div>
 </footer>
-
-<style>
-	footer {
-		color: white;
-		font-family: 'Anek Devanagari', monospace;
-		display: flex;
-	}
-
-	.font-bold {
-		margin-left: 1rem;
-	}
-
-	.text-container {
-		width: 65%;
-		max-width: 65%;
-	}
-
-	.text-container > div {
-		margin-left: 1.5rem;
-	}
-
-	#nitc-logo {
-		height: auto;
-		width: auto;
-		max-width: 100%;
-		max-height: 10em;
-	}
-
-	.img-container {
-		max-width: 35%;
-		width: 35%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-	}
-
-	.social-container {
-		width: 35%;
-		max-width: 35%;
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
-		overflow: auto;
-		flex-wrap: wrap;
-		gap: 1em;
-	}
-
-	.social-icon {
-		height: auto;
-		width: auto;
-		max-width: 2.5em;
-		max-height: 2.5em;
-	}
-</style>
