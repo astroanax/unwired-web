@@ -1,7 +1,7 @@
 <svelte:options immutable={true} />
 
 <script>
-  import Header from '$lib/header.svelte';
+  import Header from '$lib/header2.svelte';
   import Footer from '$lib/footer.svelte';
   import { base } from '$app/paths';
   import { sponsorsDescriptions } from '$lib/sponsorsDesc.js';

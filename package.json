@@ -38,6 +38,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@coreui/icons": "^3.0.1",
     "@sinnwerkstatt/sveltekit-matomo": "github:sinnwerkstatt/sveltekit-matomo",
     "@slidy/animation": "^1.0.8",
     "@slidy/core": "^3.7.6",

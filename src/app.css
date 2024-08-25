@@ -20,3 +20,10 @@
 .header-navbar {
   background-position: center;
 }
+
+.customhovercolor{
+  font-size: small;
+}
+.customhovercolor:hover{
+  color: rgba(var(--color-tertiary-500) / 1) !important;
+}
