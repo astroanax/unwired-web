@@ -4,15 +4,15 @@
   import '@coreui/icons/css/all.min.css';
 </script>
 
-<header class="fixed top-0 z-10 customheaderheight">
-  <div class="w-full h-[5vh] max-h-[5vh] bg-[#04091E] flex items-center justify-between">
-    <div class="flex items-center justify-around w-[15vw] ml-[5vw]">
+<header class="customheaderheight fixed top-0 z-10">
+  <div class="flex h-[5vh] max-h-[5vh] w-full items-center justify-between bg-[#04091E]">
+    <div class="ml-[5vw] flex w-[15vw] items-center justify-around">
       <i class="cib-instagram customhovercolor text-white"></i>
       <i class="cib-linkedin customhovercolor text-white"></i>
       <i class="cib-facebook customhovercolor text-white"></i>
       <i class="cib-youtube customhovercolor text-white"></i>
     </div>
-    <div class="text-white customhovercolor mr-[5vw]">teamunwired@nitc.ac.in</div>
+    <div class="customhovercolor mr-[5vw] text-white">teamunwired@nitc.ac.in</div>
   </div>
   <Navbar
     let:NavContainer
@@ -25,34 +25,27 @@
       <NavHamburger class="bg-primary-900 text-primary-200 hover:bg-primary-900" />
       <NavUl classUl="bg-black bg-opacity-0 mr-[5vw]" class="customanim">
         <NavLi
-          class="text-xl  hover:text-tertiary-500  text-white customhovercolor"
+          class="customhovercolor  text-xl  text-white hover:text-tertiary-500"
           href="http://teamunwired.org/"
           >HOME
         </NavLi>
-        <NavLi
-          class="text-xl customhovercolor text-white"
-          href="http://teamunwired.org/about.html">ABOUT</NavLi
+        <NavLi class="customhovercolor text-xl text-white" href="http://teamunwired.org/about.html"
+          >ABOUT</NavLi
         >
-        <NavLi class="text-xl customhovercolor text-white" href="{base}/"
-          >PROJECTS
-        </NavLi>
+        <NavLi class="customhovercolor text-xl text-white" href="{base}/">PROJECTS</NavLi>
         <NavLi
-          class="text-xl customhovercolor text-white"
+          class="customhovercolor text-xl text-white"
           href="http://teamunwired.org/gallery.html"
           >GALLERY
         </NavLi>
         <NavLi
-          class="text-xl customhovercolor text-white"
+          class="customhovercolor text-xl text-white"
           href="http://teamunwired.org/teamtry.html"
           >TEAM
         </NavLi>
+        <NavLi class="customhovercolor text-xl text-white" href="{base}/sponsors">SPONSORS</NavLi>
         <NavLi
-          class="text-xl customhovercolor text-white"
-          href="{base}/sponsors"
-          >SPONSORS
-        </NavLi>
-        <NavLi
-          class="text-xl customhovercolor text-white"
+          class="customhovercolor text-xl text-white"
           href="http://teamunwired.org/contact.html">CONTACT</NavLi
         >
       </NavUl>

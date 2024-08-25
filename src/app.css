@@ -21,14 +21,14 @@
   background-position: center;
 }
 
-.customhovercolor{
+.customhovercolor {
   font-size: small;
 }
-.customhovercolor:hover{
+.customhovercolor:hover {
   color: rgba(var(--color-tertiary-500) / 1) !important;
 }
 
-.customheaderheight{
+.customheaderheight {
   height: 20vh !important;
   max-height: 20vh !important;
 }
