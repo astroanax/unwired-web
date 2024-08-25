@@ -1,12 +1,11 @@
 <script>
   import { base } from '$app/paths';
-  const headerBg = base + '/img/3c.webp';
   import { Navbar, NavBrand, NavHamburger, NavLi, NavUl } from 'flowbite-svelte';
   import '@coreui/icons/css/all.min.css';
 </script>
 
-<header class="sticky top-0 z-10 max-h-[30vh]">
-  <div class="w-full h-[5vh] bg-[#04091E] flex items-center justify-between">
+<header class="fixed top-0 z-10 customheaderheight">
+  <div class="w-full h-[5vh] max-h-[5vh] bg-[#04091E] flex items-center justify-between">
     <div class="flex items-center justify-around w-[15vw] ml-[5vw]">
       <i class="cib-instagram customhovercolor text-white"></i>
       <i class="cib-linkedin customhovercolor text-white"></i>
@@ -17,8 +16,7 @@
   </div>
   <Navbar
     let:NavContainer
-    class="header-navbar bg-opacity-85 bg-cover bg-no-repeat shadow-[inset_0_0_1000px_1000px_rgba(4,9,30,0.85)]"
-    style="background-image: url({headerBg})"
+    class="header-navbar h-full bg-opacity-0 bg-cover bg-no-repeat shadow-[inset_0_0_1000px_1000px_rgba(4,9,30,0.85)]"
   >
     <NavContainer>
       <NavBrand href="{base}/">
